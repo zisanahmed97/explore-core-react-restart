@@ -11,6 +11,10 @@ function App() {
       <Car></Car>
       <Person></Person>
        <Carlist></Carlist>
+
+       <Developer name="mojumdar" skill="C#"></Developer>
+       <Developer name="rana" skill="java"></Developer>
+       <Developer name="shabana" skill="React"></Developer>
       
     </>
   )
@@ -51,6 +55,15 @@ function Carlist(){
         <li>bmw</li>
         <li>mercedes</li>
       </ul>
+    </div>
+  )
+}
+
+function Developer(props){
+  return(
+    <div>
+      <p>name:{props.name}</p>
+      <p>skill:{props.skill}</p>
     </div>
   )
 }
