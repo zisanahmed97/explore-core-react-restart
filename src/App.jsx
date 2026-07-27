@@ -15,6 +15,9 @@ function App() {
        <Developer name="mojumdar" skill="C#"></Developer>
        <Developer name="rana" skill="java"></Developer>
        <Developer name="shabana" skill="React"></Developer>
+
+       <Player name="tamim" run="5000"></Player>
+       <Player name="mushi" run="5000"></Player>
       
     </>
   )
@@ -64,6 +67,19 @@ function Developer(props){
     <div>
       <p>name:{props.name}</p>
       <p>skill:{props.skill}</p>
+    </div>
+  )
+}
+
+
+
+
+//props destructuring
+function Player({name, run}){
+  return(
+    <div className='person'>
+      <p>Player Name:{name}</p>
+      <p>run:{run}</p>
     </div>
   )
 }
