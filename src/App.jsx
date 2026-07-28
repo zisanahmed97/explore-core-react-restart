@@ -1,9 +1,15 @@
 
 import './App.css'
+import Singer from './Singer';
 import ToDo from './ToDo';
 
 function App() {
- 
+   const singers = [
+    {id:"1" , name:"tahsan", age:"43"},
+    {id:"2" , name:"pritom", age:"31"},
+    {id: "3", name:"tabbu", age:"33"},
+    {id:"4" , name:"james", age:"54"}
+   ]
 
   return (
     <>
@@ -19,11 +25,15 @@ function App() {
 
        <Player name="tamim" run="5000"></Player>
        <Player name="mushi" run="5000"></Player> */}
-
+{/* 
        <ToDo task="task is react" isDone={true}></ToDo>
        <ToDo task="task is js" isDone={true}></ToDo>
        <ToDo task="task is html" isDone={false}></ToDo>
-       <ToDo task="task is c#" isDone={true}></ToDo>
+       <ToDo task="task is c#" isDone={true}></ToDo> */}
+
+       {
+        singers.map(singer => <Singer key={singer.id} singer={singer}></Singer>)
+       }
       
     </>
   )
