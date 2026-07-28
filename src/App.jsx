@@ -20,7 +20,10 @@ function App() {
        <Player name="tamim" run="5000"></Player>
        <Player name="mushi" run="5000"></Player> */}
 
-       <ToDo></ToDo>
+       <ToDo task="task is react" isDone={true}></ToDo>
+       <ToDo task="task is js" isDone={true}></ToDo>
+       <ToDo task="task is html" isDone={false}></ToDo>
+       <ToDo task="task is c#" isDone={true}></ToDo>
       
     </>
   )
