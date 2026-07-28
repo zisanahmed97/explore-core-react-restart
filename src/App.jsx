@@ -1,12 +1,13 @@
 
 import './App.css'
+import ToDo from './ToDo';
 
 function App() {
  
 
   return (
     <>
-      <Person></Person>
+      {/* <Person></Person>
       <Person></Person>
       <Car></Car>
       <Person></Person>
@@ -17,7 +18,9 @@ function App() {
        <Developer name="shabana" skill="React"></Developer>
 
        <Player name="tamim" run="5000"></Player>
-       <Player name="mushi" run="5000"></Player>
+       <Player name="mushi" run="5000"></Player> */}
+
+       <ToDo></ToDo>
       
     </>
   )
