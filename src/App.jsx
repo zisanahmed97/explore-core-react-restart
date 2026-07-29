@@ -2,6 +2,9 @@
 import './App.css'
 import Singer from './Singer';
 import ToDo from './ToDo';
+import player from "./Player"
+import Actor from './Actor';
+import Roommate from './Roommate';
 
 function App() {
    const singers = [
@@ -11,6 +14,31 @@ function App() {
     {id:"4" , name:"james", age:"54"}
    ]
 
+   const players = [
+    {id:"1", name:"messi", title:"GOAT"},
+    {id:"2", name:"cr7", title:"pendu"},
+    {id:"3", name:"mabappi", title:"kocchop"},
+    {id:"4", name:"alvarez", title:"spiderman"}
+
+
+   ]
+
+   const actors = [
+    {id:"1", name:"sallu", heroType:"Mega-Star"},
+    {id:"2", name:"srk", heroType:"Super-Star"},
+    {id:"3", name:"ranbir", heroType:"Super-Star"},
+    {id:"4", name:"arjun kapoor", heroType:"chutiya-Star"}
+   ]
+
+   const roommates=[
+    {id:"1",name:"tanjib",type:"pagla"},
+    {id:"1",name:"hasib",type:"vombol"},
+    {id:"1",name:"shajid",type:"sudovai"}
+   ]
+     
+  
+
+   
   return (
     <>
       {/* <Person></Person>
@@ -33,6 +61,18 @@ function App() {
 
        {
         singers.map(singer => <Singer key={singer.id} singer={singer}></Singer>)
+       }
+
+        {/* {
+        players.map(player => <Player key={player.id} player={player}></Player>)
+       }  */}
+
+       {
+        actors.map(actor => <Actor key={actor.id} actor={actor}></Actor>)
+       }
+
+       {
+        roommates.map(roommate => <Roommate key={roommate.id} roommate={roommate}></Roommate>)
        }
       
     </>
